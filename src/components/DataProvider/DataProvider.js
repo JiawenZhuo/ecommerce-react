@@ -1,0 +1,111 @@
+import React, { createContext, useState } from 'react';
+
+
+export const DataContext = createContext();
+
+export const DataProvider = (props) =>{
+    const [products, setProducts] = useState([
+        {
+            "id": 0 ,
+            "name": "Fall Limited Edition Sneakers",
+            "company": "SNEAKER COMPANY",
+            "des":"These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.",
+            "price":"125.00",
+            "gender": "F",
+            "discount":"50%",
+            "original_price":"250",
+            "pictures":[
+                "https://www.platypusshoes.com.au/media/catalog/product/cache/db6130527737a35b7652b68f1cc1d88c/w/l/wl574fw2.gry_wl574fw2_gry_01_699609.jpg",
+                "https://www.platypusshoes.com.au/media/catalog/product/cache/db6130527737a35b7652b68f1cc1d88c/w/l/wl574fw2.gry_wl574fw2_gry_08_699609.jpg",
+                "https://www.platypusshoes.com.au/media/catalog/product/cache/db6130527737a35b7652b68f1cc1d88c/w/l/wl574fw2.gry_wl574fw2_gry_02_699609.jpg",
+                "https://www.platypusshoes.com.au/media/catalog/product/cache/db6130527737a35b7652b68f1cc1d88c/w/l/wl574fw2.gry_wl574fw2_gry_06_699609.jpg"
+                
+            ]
+        },
+        {
+            "id": 1 ,
+            "name": "WOMENS CT ALL STAR LIFT HI",
+            "company": "CONVERSE",
+            "des":"Created in 1917, the Chuck Taylor All Star sneaker was the original basketball shoe. Its use has changed over the years, but it’s still perfect in its simplicity. With its timeless silhouette, vulcanized rubber sole and unmistakable ankle patch, the Chuck is ready for you to make it your own.",
+            "price":"130.00",
+            "gender": "F",
+            "discount":"0%",
+            "original_price":"$130",
+            "pictures":[
+                "https://www.platypusshoes.com.au/media/catalog/product/cache/db6130527737a35b7652b68f1cc1d88c/5/6/560845.blk_560845_blk_01_174424.jpeg",
+                "https://www.platypusshoes.com.au/media/catalog/product/cache/db6130527737a35b7652b68f1cc1d88c/5/6/560845.blk_560845_blk_05_174424.jpeg",
+                "https://www.platypusshoes.com.au/media/catalog/product/cache/db6130527737a35b7652b68f1cc1d88c/5/6/560845.blk_560845_blk_03_174424.jpeg",
+                "https://www.platypusshoes.com.au/media/catalog/product/cache/db6130527737a35b7652b68f1cc1d88c/5/6/560845.blk_560845_blk_07_174424.jpeg"
+            ]
+        },
+        {
+            "id": 2 ,
+            "name": "WOMENS CALI STAR",
+            "company": "PUMA",
+            "des":"Elevate your street style from casual to cool in these retro, '80s-inspired Puma sneakers. With a perforated forefoot, long, clean lines and a thick, textured midsole, you’ll catch every onlooker’s eye.",
+            "price":"140.00",
+            "gender": "F",
+            "discount":"0%",
+            "original_price":"$140.00",
+            "pictures":[
+                "https://www.platypusshoes.com.au/media/catalog/product/cache/db6130527737a35b7652b68f1cc1d88c/3/8/38188501_wht_01.jpeg",
+                "https://www.platypusshoes.com.au/media/catalog/product/cache/db6130527737a35b7652b68f1cc1d88c/3/8/38188501_wht_08.jpeg",
+                "https://www.platypusshoes.com.au/media/catalog/product/cache/db6130527737a35b7652b68f1cc1d88c/3/8/38188501_wht_04.jpeg",
+                "https://www.platypusshoes.com.au/media/catalog/product/cache/db6130527737a35b7652b68f1cc1d88c/3/8/38188501_wht_05.jpeg"               
+            ]
+        },
+        {
+            "id": 3 ,
+            "name": "MENS AIR MAX INFINITY 2",
+            "company": "NIKE",
+            "des":"With its futuristic look, accentuated heel and mixed-material upper, the Nike Air Max Infinity 2 brings you a textured, fashion-forward look you can wear day in and day out. The wavy design lines add an organic element to balance the modern aesthetic while the Max Air cushioning adds comfort to your day.",
+            "price":"160",
+            "gender": "M",
+            "discount":"0%",
+            "original_price":"$160.00",
+            "pictures":[
+                "https://www.platypusshoes.com.au/media/catalog/product/cache/db6130527737a35b7652b68f1cc1d88c/c/u/cu9452_006_blk_01.jpeg",
+                "https://www.platypusshoes.com.au/media/catalog/product/cache/db6130527737a35b7652b68f1cc1d88c/c/u/cu9452_006_blk_02.jpeg",
+                "https://www.platypusshoes.com.au/media/catalog/product/cache/db6130527737a35b7652b68f1cc1d88c/c/u/cu9452_006_blk_08.jpeg",
+                "https://www.platypusshoes.com.au/media/catalog/product/cache/db6130527737a35b7652b68f1cc1d88c/c/u/cu9452_006_blk_05.jpeg"
+            ]
+        },
+        {
+            "id": 4 ,
+            "name": "SID SUEDE",
+            "company": "VANS",
+            "des":"New to the Anaheim Factory pack, the SID DX features high-gloss, heritage-inspired color palettes, our iconic flying-V logo, and sturdy suede uppers for a unique look, feel, and construction. Paying tribute to our first Vans factory in Anaheim, California, it also includes throwback details, cotton laces, striped sidewalls, and the modernized comfort of upgraded Ortholite® sockliners.",
+            "price":"70",
+            "gender": "M",
+            "discount":"50%",
+            "original_price":"$140",
+            "pictures":[
+                "https://www.platypusshoes.com.au/media/catalog/product/cache/db6130527737a35b7652b68f1cc1d88c/v/n/vna54f54xh_blu_01_1.jpeg",
+                "https://www.platypusshoes.com.au/media/catalog/product/cache/db6130527737a35b7652b68f1cc1d88c/v/n/vna54f54xh_blu_02_1.jpeg",
+                "https://www.platypusshoes.com.au/media/catalog/product/cache/db6130527737a35b7652b68f1cc1d88c/v/n/vna54f54xh_blu_03.jpeg",
+                "https://www.platypusshoes.com.au/media/catalog/product/cache/db6130527737a35b7652b68f1cc1d88c/v/n/vna54f54xh_blu_05_1.jpeg"
+            ]
+        },
+        {
+            "id": 5 ,
+            "name": "TJM LEATHER",
+            "company": "TOMMY HILFIGER",
+            "des":"A staple sneaker from Tommy Hilfiger in a classic low-top profile with rubber sole. Leather upper construction wth branding logo detail on the side.",
+            "price":"169",
+            "gender": "M",
+            "discount":"0%",
+            "original_price":"$169",
+            "pictures":[
+                "https://www.platypusshoes.com.au/media/catalog/product/cache/db6130527737a35b7652b68f1cc1d88c/f/m/fm02157100.wht_fm02157100_wht_01_225392.jpeg",
+                "https://www.platypusshoes.com.au/media/catalog/product/cache/db6130527737a35b7652b68f1cc1d88c/f/m/fm02157100.wht_fm02157100_wht_02_225392.jpeg",
+                "https://www.platypusshoes.com.au/media/catalog/product/cache/db6130527737a35b7652b68f1cc1d88c/f/m/fm02157100.wht_fm02157100_wht_03_225392.jpeg",
+                "https://www.platypusshoes.com.au/media/catalog/product/cache/db6130527737a35b7652b68f1cc1d88c/f/m/fm02157100.wht_fm02157100_wht_05_225392.jpeg" 
+            ]
+        }
+    ])
+    return(
+        <DataContext.Provider value={[products, setProducts]}>
+            {props.children}
+        </DataContext.Provider>
+    )
+}
