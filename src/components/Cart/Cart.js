@@ -1,6 +1,8 @@
-import React from 'react';
+import React, {useContext, useEffect} from 'react';
 import styled from 'styled-components';
 import CartCard from './CartCard.js';
+import { CartContext } from '../../hooks/useShoppingCart/useShoppingCart.js';
+
 export const CartWrapper = styled.div`
     display: ${props => props.cartOpened  ? 'flex' : 'none'};
     box-shadow: rgba(149, 157, 165, 0.2) 5px 8px 24px;
@@ -80,7 +82,8 @@ const EmptyCart = styled.div`
     align-items: center;
     justify-content: center;
 `
-const CartWithItems= ({cartItems, opened}) =>{
+const CartWithItems= ({opened}) =>{
+    const [cartItems, setCartItems] = useContext(CartContext);
     return(
         <div>
         {
@@ -94,13 +97,15 @@ const CartWithItems= ({cartItems, opened}) =>{
     )
 }
 
-function Cart({opened, cartItems}){
+function Cart({opened}){
 
-    let cartElement;
-    if(cartItems.length === 0){
+    const [cartItems, setCartItems] = useContext(CartContext);
+
+    var cartElement;
+    if( cartItems.length ===0 ){
         cartElement = <EmptyCart><span>Your cart is Empty</span></EmptyCart>;
     }else{
-        cartElement = <CartWithItems cartItems={cartItems} opened={opened}/>
+        cartElement = <CartWithItems opened={opened}/>
     }
 
     return(

@@ -5,7 +5,7 @@ import React, { useContext }  from 'react';
 import {useParams} from 'react-router-dom';
 import { DataContext } from "../DataProvider/DataProvider.js";
 
-function ProductDetail({handleCartItems}){
+function ProductDetail(){
 
     const {id} = useParams();
     const [products, setProducts]= useContext(DataContext);
@@ -14,13 +14,14 @@ function ProductDetail({handleCartItems}){
         return (product.id).toString() === id.toString();
     })
 
+
     return(
         <>
          {
             details.map((detail)=>(
             <Container key={detail.id}>
                  <ImageGroup images={detail.pictures}/>
-                 <ProductionDescription handleCartItems={handleCartItems} detail={detail}/>
+                 <ProductionDescription detail={detail} />
             </Container>
             ))
          }

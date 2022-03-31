@@ -27,3 +27,10 @@ export const CardStyle =styled.div`
     margin: 10px 15px 10px 15px;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
 `
+
+export const FilterFormDivStyle = styled.div`
+    position: absolute;
+    right: 500px;
+    border: 1px red solid;
+    
+`

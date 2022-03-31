@@ -28,6 +28,7 @@ export const ImgDiv = styled.div`
       background-color: #FFFFFF;
       border: 2px solid #FF7E1B;
     };
+    
     opacity: 1;
 `
 

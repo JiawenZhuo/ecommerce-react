@@ -11,7 +11,7 @@ import {
 import React, { useEffect } from "react";
 import AddToCart from "./AddToCart.js";
 
-function ProductionDescription({detail, handleCartItems}) {
+function ProductionDescription({detail}) {
 
   return (
     <div>
@@ -24,7 +24,7 @@ function ProductionDescription({detail, handleCartItems}) {
             <Discount><p className="discountAmount">{detail.discount}</p></Discount>
           </InlineContainer>
           <OriginalPriceStyle>{detail.original_price}</OriginalPriceStyle>
-          <AddToCart handleCartItems={handleCartItems} detail={detail}/>
+          <AddToCart detail={detail} />
         </DescriptionWrapper>
     
     </div>
