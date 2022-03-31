@@ -1,11 +1,11 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { FilterFormDivStyle } from './style';
-import { Container, ContainerRow } from '../../Container/Container';
+import {  ContainerRow } from '../../Container/Container';
 function ToolBar({setLowToHigh}) {
   
 
   const handleChange = (event) => {
-    if(event.target.value == "Price high to low"){
+    if(event.target.value === "Price high to low"){
       setLowToHigh(1);
     }else{
       setLowToHigh(-1);

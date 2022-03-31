@@ -1,11 +1,11 @@
-import React, { useEffect, useState, useContext } from "react";
+import React, { useState, useContext } from "react";
 import { CartContext } from "../../hooks/useShoppingCart/useShoppingCart.js";
 import { AddButton, AddToCharButton, AddToCartContainer, PlusMinusContainer, CartIcon, ButtonText,BodyFont } from "./ProductDescription.element.js";
 
 function AddToCart({detail}){
 
     let [count, setCount] = useState(0);
-    const [cartItems, setCartItems] = useContext(CartContext);
+    const {cartItems, setCartItems} = useContext(CartContext);
 
     function incrementCount(){
         count = count +1;

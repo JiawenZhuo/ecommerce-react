@@ -67,12 +67,7 @@ const ItemWrapper = styled.div`
     margin: 2px;
     padding: 10px;
 `
-const EmptyCart = styled.div`
-    height: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-`
+
 
 function CartCard({cartItem}){
 

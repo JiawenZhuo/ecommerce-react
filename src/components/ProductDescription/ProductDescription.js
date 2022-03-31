@@ -8,7 +8,7 @@ import {
   PriceStyle,
   Discount
 } from "./ProductDescription.element.js";
-import React, { useEffect } from "react";
+import React from "react";
 import AddToCart from "./AddToCart.js";
 
 function ProductionDescription({detail}) {

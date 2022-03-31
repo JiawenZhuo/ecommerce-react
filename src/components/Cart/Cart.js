@@ -83,7 +83,7 @@ const EmptyCart = styled.div`
     justify-content: center;
 `
 const CartWithItems= ({opened}) =>{
-    const [cartItems, setCartItems] = useContext(CartContext);
+    const {cartItems} = useContext(CartContext);
     return(
         <div>
         {
@@ -99,7 +99,7 @@ const CartWithItems= ({opened}) =>{
 
 function Cart({opened}){
 
-    const [cartItems, setCartItems] = useContext(CartContext);
+    const {cartItems} = useContext(CartContext);
 
     var cartElement;
     if( cartItems.length ===0 ){

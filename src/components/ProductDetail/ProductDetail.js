@@ -8,7 +8,7 @@ import { DataContext } from "../DataProvider/DataProvider.js";
 function ProductDetail(){
 
     const {id} = useParams();
-    const [products, setProducts]= useContext(DataContext);
+    const {products}= useContext(DataContext);
 
     const details = products.filter((product) =>{
         return (product.id).toString() === id.toString();

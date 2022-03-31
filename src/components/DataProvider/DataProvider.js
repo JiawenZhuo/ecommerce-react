@@ -103,8 +103,13 @@ export const DataProvider = (props) =>{
             ]
         }
     ])
+
+    const value = {
+        products, 
+        setProducts,
+    }
     return(
-        <DataContext.Provider value={[products, setProducts]}>
+        <DataContext.Provider value={value}>
             {props.children}
         </DataContext.Provider>
     )
