@@ -110,6 +110,7 @@ export const PlusMinusContainer = styled.div`
     height: 50px;
     display: flex;
     align-items: center;
+    flex-grow: 1;
     justify-content: space-around;
 `
 
@@ -148,6 +149,7 @@ export const CartIcon = styled(ShoppingCart)`
 export const AddToCartContainer = styled(Container)`
     align-items: stretch;
     border: none;
+    width: 100%;
 `
 
 export const ButtonText = styled.div`

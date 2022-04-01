@@ -3,7 +3,7 @@ import { StyledLine } from "./components/Navigations/style.js";
 import Cart from "./components/Cart/Cart.js";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import React,{ useState} from "react";
-import ProductDetail from "./components/ProductDetail/ProductDetail.js";
+import ProductDetail from "./components/ProductDetail";
 import { DataProvider } from "./components/DataProvider/DataProvider.js";
 import Navigation from "./components/Navigations/Navigation.js";
 import CollectionPage from "./pages/CollectionPage/CollectionPage";

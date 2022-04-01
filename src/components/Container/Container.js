@@ -7,7 +7,7 @@ export const  Container = styled.div`
     margin-top: 21px;
     margin-left: auto;
     margin-right: auto;
-    border: 2px solid #FF7E1B;
+    /* border: 2px solid #FF7E1B; */
     justify-content: space-around;
     margin-left: auto;
     margin-right: auto;
@@ -27,4 +27,10 @@ export const  ContainerRow = styled.div`
     align-items: center;
     border: none;
     /* border: 1px red solid; */
+`
+
+export const flexRowWrapper = styled.div`
+    display: flex; 
+    justify-content: flex-start;
+    flex-direction: row;
 `

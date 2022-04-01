@@ -4,6 +4,7 @@ import styled from 'styled-components';
 export const Logo = styled(logo)`
     width: 137.5px;
     height: 20px;
+    margin: 5px;
 `;
 
 

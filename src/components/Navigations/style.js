@@ -8,12 +8,13 @@ export const StyledLink = styled.button`
   list-style-type: none;
   font-size: 15px;
   font-family: "Montserrat", sans-serif;
-  margin: auto;
+  /* margin: auto; */
   font-weight: 400;
+  /* border: 1px green solid; */
   cursor: pointer;
   &:hover {
     border-bottom: 3px solid #ff7e1b;
-    padding-bottom: 57px;
+    /* padding-bottom: ; */
   }
 `;
 
@@ -24,6 +25,8 @@ export const LinkWrapper = styled.div`
   width: 397px;
   height: 26px;
   margin-right: 5px;
+  /* border: 1px red solid; */
+  align-items: center;
 `;
 export const NavLeft = styled.div`
   display: flex;
