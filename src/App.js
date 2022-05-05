@@ -10,6 +10,7 @@ import CollectionPage from "./pages/CollectionPage/CollectionPage";
 import MenPage from "./pages/MenPage/MenPage";
 import {CartProvider} from "./hooks/useShoppingCart"
 import WomenPage from "./pages/WomenPage/WomenPage";
+import Register from "./components/Register/Register";
 
 function App() {
   const [opened, setOpened] = useState(false);
@@ -25,6 +26,7 @@ function App() {
           <Route path="/men" element={<MenPage />}></Route>
           <Route path="/women" element={<WomenPage />}></Route>
           <Route path="/products/:id" element={<ProductDetail />}></Route>
+          <Route path="/register" element={<Register />}></Route>
         </Routes>
         <Cart opened={opened} />
       </Router>

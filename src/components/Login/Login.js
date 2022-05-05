@@ -29,14 +29,10 @@ export default function Login({setToken}) {
     <>
     <h1>Please enter your login details</h1>
     <form onSubmit = {handleSubmit}>
-        <label>
-            <p>username</p>
+        <label for="username"l>Username</label>
             <input type="text" onChange={e => setUserName(e.target.value)}/>
-        </label>
-        <label>
-            <p>Password</p>
-            <input type="password" onChange={e => setPassword(e.target.value)}/>
-        </label>
+        <label for="password">Password</label>
+            <input type="text" onChange={e => setPassword(e.target.value)}/>
         <div>
             <button type="submit">Submit</button>
         </div>

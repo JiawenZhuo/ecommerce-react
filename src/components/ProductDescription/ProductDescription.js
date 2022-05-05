@@ -10,8 +10,10 @@ import {
 } from "./ProductDescription.element.js";
 import React from "react";
 import AddToCart from "./AddToCart.js";
+import axios from "axios";
 
 function ProductionDescription({detail}) {
+
 
   return (
     <div>

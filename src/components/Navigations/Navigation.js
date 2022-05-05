@@ -9,6 +9,8 @@ import profile from "../../assets/images/image-avatar.png";
 import CartButton from "../Cart/CartButton.js";
 import { Avatar } from "./Avatar.js";
 import React from 'react'
+import {Link} from 'react-router-dom';
+import Register from "../Register/Register.js";
 
 function Navigation({setOpened}) {
   return (
@@ -19,7 +21,7 @@ function Navigation({setOpened}) {
       </NavLeft>
       <NavRight>
         <CartButton setOpened={setOpened}  />
-        <Avatar src={profile} />
+        <Link to='/register'><Avatar src={profile} /></Link>
       </NavRight>
     </Nav>
   );
