@@ -11,6 +11,8 @@ import MenPage from "./pages/MenPage/MenPage";
 import {CartProvider} from "./hooks/useShoppingCart"
 import WomenPage from "./pages/WomenPage/WomenPage";
 import Register from "./components/Register/Register";
+import Login from "./components/Login/Login";
+import SignIn from "./components/SignIn/SignIn";
 
 function App() {
   const [opened, setOpened] = useState(false);
@@ -27,6 +29,7 @@ function App() {
           <Route path="/women" element={<WomenPage />}></Route>
           <Route path="/products/:id" element={<ProductDetail />}></Route>
           <Route path="/register" element={<Register />}></Route>
+          <Route path="/login" element={<SignIn/>}></Route>
         </Routes>
         <Cart opened={opened} />
       </Router>

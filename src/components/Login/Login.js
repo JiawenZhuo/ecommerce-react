@@ -1,17 +1,7 @@
 import React, {useState} from 'react'
 import PropsTypes from 'prop-types';
+import axios from "axios";
 
-
-async function loginUser(credentials){
-    return fetch('http://localhost:8080/login', {
-        method: 'POST',
-        headers: {
-            'Content-Type':'application/json'
-        },
-        body: JSON.stringify(credentials)
-    })
-    .then(data => data.json())
-}
 
 export default function Login({setToken}) {
     const [username, setUserName] = useState();
@@ -24,6 +14,17 @@ export default function Login({setToken}) {
             password
         });
         setToken(token);
+    }
+
+
+    async function loginUser(){
+        axios.get("http://localhost:3001/accounts/login", {username, password} )
+        .then(function(res){
+            
+        })
+        .catch(function(err){
+            console.log('wrong pwd')
+        })
     }
   return (
     <>

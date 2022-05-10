@@ -59,17 +59,16 @@ function Register () {
         axios.post("http://localhost:3001/users/new", {
             username: user,
             password: pwd
-        }).
-        then(function(response){
-            console.log("stringfy"+JSON.stringify(response.config.data));
-            console.log(response.config.data);
-        
+        })
+        .then(function(response){
+            console.log(JSON.stringify(response));
         })
         .catch((err) =>{
             setErrMsg(err);
             console.log(err);
         })
-            setSuccess(true);
+    
+        setSuccess(true);
         event.preventDefault();
     }
 
@@ -86,8 +85,8 @@ function Register () {
       ):(
         <RegisterSection>
       <RegisterCard>
-        <RegisterH1>Get started with a free account</RegisterH1>
-        <registerH1>Create a free account to make shopping easier</registerH1>
+        <div>Get started with a free account</div>
+        <div>Create a free account to make shopping easier</div>
         <form onSubmit={handleSumbit}>
             <InputWrapper>
             <label htmlFor="username">Username</label>
@@ -109,10 +108,13 @@ function Register () {
                 id="password"
                 type="text"
                 autoComplete="off"
+                required
                 onChange={e => setPwd(e.target.value)}
             ></input></InputWrapper>
             <input type="submit" value="Sign Up"/>
         </form>
+        <span>already have a account ?</span>
+        <button>login </button>
       </RegisterCard>
       </RegisterSection>
       )
