@@ -1,9 +1,8 @@
 import React, {useState, useRef, useEffect} from 'react'
-
-import {faCheck, faTimes, faInfoCircle} from "@fortawesome/free-solid-svg-icons";
-import {FrontAwesomeIcon} from "@fortawesome/free-regular-svg-icons";
-import { toBeRequired } from '@testing-library/jest-dom/dist/matchers';
+import { useNavigate } from "react-router-dom";
+// import {useHistory} from "react-router-dom";
 import axios from '../../api/axios';
+import Login from '../Login/Login';
 import {RegisterCard,RegisterH1, RegisterSection, InputWrapper, FormWrapper} from './style';
 
 const USER_REGEX = /^[A-z][A-z0-9-_]{3,23}$/;
@@ -12,7 +11,7 @@ const REGISTER_URL = '/register';
 
 
 function Register () {
-
+    const navigate = useNavigate();
     // const userRef = useRef();
     // const errRef = useRef();
 
@@ -31,6 +30,10 @@ function Register () {
     const [errMsg, setErrMsg] = useState('');
     const [success, setSuccess] = useState(false);
 
+
+    const toLogin = () =>{
+        navigate("/login");
+    }
     // useEffect(() =>{
     //     userRef.current.focus();
     // }, []);
@@ -108,13 +111,13 @@ function Register () {
                 id="password"
                 type="text"
                 autoComplete="off"
-                required
+                req
                 onChange={e => setPwd(e.target.value)}
             ></input></InputWrapper>
             <input type="submit" value="Sign Up"/>
         </form>
         <span>already have a account ?</span>
-        <button>login </button>
+        <button onClick ={toLogin}>login</button>
       </RegisterCard>
       </RegisterSection>
       )

@@ -1,13 +1,9 @@
 import React from 'react';
+import Login from '../../components/Login/Login';
 import Cards from '../../components/Product_Index/Cards/Cards';
-import Login from '../../components/Login/Login.js';
-import useToken from '../../hooks/useToken';
-function MenPage() {
-    const { token, setToken } = useToken();
 
-    if(!token){
-      return <Login setToken={setToken}/>
-    }
+function MenPage() {
+  
     return (
         <div>
             <Cards />
