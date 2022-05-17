@@ -10,7 +10,6 @@ import CartButton from "../Cart/CartButton.js";
 import { Avatar } from "./Avatar.js";
 import React from 'react'
 import {Link} from 'react-router-dom';
-import Register from "../Register/Register.js";
 
 function Navigation({setOpened}) {
   return (

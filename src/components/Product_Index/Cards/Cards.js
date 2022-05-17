@@ -1,26 +1,10 @@
-import React, { useContext, useEffect } from "react";
-import axios from 'axios';
+import React, { useContext } from "react";
 import { ContainerRow} from "../../Container/Container.js";
-// import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Card from "./Card";
 import { DataContext } from "../../DataProvider/DataProvider.js";
 
 function Cards({para,lowToHigh}) {
-  // const url='http://localhost:8000/products';
-  // const [products, setProducts] = useState([]);
 
-  // const fetchItems = () => {
-  //     axios.get(url)
-  //     .then(res => {
-  //         const data = res.data;
-  //         // console.log(data);
-  //         setProducts([...products,...data])
-  //     })
-  // }
-
-  // useEffect(() =>{
-  //     fetchItems();
-  // },[])
   const {products} = useContext(DataContext);
 
 
