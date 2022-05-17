@@ -3,12 +3,18 @@ import { useNavigate } from "react-router-dom";
 // import {useHistory} from "react-router-dom";
 import axios from '../../api/axios';
 import Login from '../Login/Login';
-import {RegisterCard,RegisterH1, RegisterSection, InputWrapper, FormWrapper} from './style';
+import {RegisterCard,RegisterH1, RegisterSection, InputWrapper, FormWrapper, Button} from './style';
 
 const USER_REGEX = /^[A-z][A-z0-9-_]{3,23}$/;
 const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
 const REGISTER_URL = '/register';
 
+const inputStyle={
+    color: "#555555", 
+    cursor: 'pointer', 
+    padding: "6px 14px",
+    background: "#ffff",
+}
 
 function Register () {
     const navigate = useNavigate();
@@ -90,7 +96,7 @@ function Register () {
       <RegisterCard>
         <div>Get started with a free account</div>
         <div>Create a free account to make shopping easier</div>
-        <form onSubmit={handleSumbit}>
+        <form onSubmit={handleSumbit} style={{'display': 'flex', 'flex-direction': 'column','align-items': 'center'}}>
             <InputWrapper>
             <label htmlFor="username">Username</label>
             <input 
@@ -114,10 +120,10 @@ function Register () {
                 req
                 onChange={e => setPwd(e.target.value)}
             ></input></InputWrapper>
-            <input type="submit" value="Sign Up"/>
+            <div><input type="submit" value="Sign Up" style={inputStyle}/></div>
         </form>
-        <span>already have a account ?</span>
-        <button onClick ={toLogin}>login</button>
+        <span style={{padding: "10px 0px 10px 0px"}}>already have a account ?</span>
+        <Button onClick ={toLogin}>login</Button>
       </RegisterCard>
       </RegisterSection>
       )
