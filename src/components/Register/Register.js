@@ -93,7 +93,7 @@ function Register () {
           </section>
       ):(
         <RegisterSection>
-      <RegisterCard>
+        <RegisterCard>
         <div>Get started with a free account</div>
         <div>Create a free account to make shopping easier</div>
         <form onSubmit={handleSumbit} style={{'display': 'flex', 'flex-direction': 'column','align-items': 'center'}}>

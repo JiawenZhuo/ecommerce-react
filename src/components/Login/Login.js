@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from "react";
 import axios from "axios";
+import { LogInCard, InputWrapper} from "./style";
 
 function Login() {
 
@@ -45,22 +46,23 @@ function Login() {
     }
   return (
     <>
+      
         {logIn ?   
                 (<section>
                 <h1>Success!</h1>
                 </section>
             )
             :(
-                <div>
+                <LogInCard>
                 <h1>Please enter your login details</h1>
-                <form onSubmit = {handleSubmit}>
-                    <label htmlFor="username">Username</label>
-                    <input type="text" onChange={e => setUserName(e.target.value)}/>
-                    <label htmlFor="password">Password</label>
-                <input type="text" onChange={e => setPassword(e.target.value)}/>
-                <div><button type="submit">Submit</button></div>
+                <form onSubmit = {handleSubmit} style={{'display': 'flex', 'flex-direction': 'column','align-items': 'center'}}>
+                    <InputWrapper><label htmlFor="username">Username</label>
+                    <input type="text" onChange={e => setUserName(e.target.value)}/></InputWrapper>
+                    <InputWrapper><label htmlFor="password">Password</label>
+                    <input type="text" onChange={e => setPassword(e.target.value)}/></InputWrapper>
+                    <div><button type="submit">Login</button></div>
                 </form>
-                </div>
+                </LogInCard>
           )
         }
     </>
