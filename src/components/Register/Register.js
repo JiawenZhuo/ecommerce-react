@@ -26,7 +26,8 @@ function Register () {
 
 
     const handleSumbit=(event) =>{
-        axios.post("http://localhost:3001/users/new", {
+        const url = `${process.env.REACT_APP_URL}/users/new`
+        axios.post(url, {
             username: user,
             password: pwd
         })

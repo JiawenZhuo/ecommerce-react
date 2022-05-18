@@ -11,7 +11,8 @@ function Login() {
     const [errMsg, setErrMsg] = useState('');
 
     const handleSubmit =  (e) =>{
-        axios.post("http://localhost:3001/accounts/login", 
+        const url = `${process.env.REACT_APP_URL}/accounts/login`
+        axios.post(url, 
         {   username: username, 
             password: password
         },
