@@ -17,10 +17,6 @@
     "styled-components": "^5.3.3",
     "web-vitals": "^2.1.4"
   },
-  "engines": {
-    "npm":"8.5.0",
-    "node":"16.15.0"
-  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
