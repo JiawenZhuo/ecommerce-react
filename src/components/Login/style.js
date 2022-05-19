@@ -3,10 +3,8 @@ import styled from 'styled-components';
 import { Container } from '../Container/Container';
 
 export const LogInCard = styled(Container)`
-    display: flex;
     border: 1px red solid;
     flex-direction: column;
-    flex-wrap: wrap;
     width: 35%;
     align-content: center;
     justify-content: center;

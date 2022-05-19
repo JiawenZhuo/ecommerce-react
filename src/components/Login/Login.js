@@ -56,7 +56,7 @@ function Login() {
             :(
                 <LogInCard>
                 <h1>Please enter your login details</h1>
-                <form onSubmit = {handleSubmit} style={{'display': 'flex', 'flex-direction': 'column','align-items': 'center'}}>
+                <form onSubmit = {handleSubmit} style={{'display': 'flex', 'flexDirection': 'column','alignItems': 'center'}}>
                     <InputWrapper><label htmlFor="username">Username</label>
                     <input type="text" onChange={e => setUserName(e.target.value)}/></InputWrapper>
                     <InputWrapper><label htmlFor="password">Password</label>

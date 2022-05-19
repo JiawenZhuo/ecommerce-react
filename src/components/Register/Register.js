@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import { useNavigate } from "react-router-dom";
 import axios from '../../api/axios';
 import {RegisterCard, RegisterSection, InputWrapper, Button} from './style';
@@ -44,13 +44,16 @@ function Register () {
     }
 
 
+    useEffect(()=>{
+        console.log(`${process.env.REACT_APP_URL}/users/new`);
+    },[])
   return (
       <>
       {success ? (
           <section>
               <h1>Success!</h1>
               <p>
-                  <a href="#">Sign In</a>
+                <Button onClick ={toLogin}>login</Button>
               </p>
           </section>
       ):(
@@ -58,7 +61,7 @@ function Register () {
         <RegisterCard>
         <div>Get started with a free account</div>
         <div>Create a free account to make shopping easier</div>
-        <form onSubmit={handleSumbit} style={{'display': 'flex', 'flex-direction': 'column','align-items': 'center'}}>
+        <form onSubmit={handleSumbit} style={{'display': 'flex', 'flexDirection': 'column','alignItems': 'center'}}>
             <InputWrapper>
             <label htmlFor="username">Username</label>
             <input 
