@@ -26,7 +26,7 @@ function Register () {
 
 
     const handleSumbit=(event) =>{
-        const url = `${process.env.REACT_APP_URL}/users/new`
+        const url = `${process.env.REACT_APP_URL}users/new`
         axios.post(url, {
             username: user,
             password: pwd
@@ -45,7 +45,7 @@ function Register () {
 
 
     useEffect(()=>{
-        console.log(`${process.env.REACT_APP_URL}/users/new`);
+        console.log(`${process.env.REACT_APP_URL}users/new`);
     },[])
   return (
       <>
