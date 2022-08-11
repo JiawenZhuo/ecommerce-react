@@ -26,7 +26,7 @@ function Login() {
                 console.log("successful login");
                 console.log(response.data);
                 setUser(response.data);
-                localStorage.setItem("user", response.data);
+                localStorage.setItem("user", JSON.stringify(response.data));
                 setLogIn(true);
             }else{
                 console.log("login fail");

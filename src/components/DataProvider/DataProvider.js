@@ -15,10 +15,10 @@ export const DataProvider = (props) =>{
             "discount":"50%",
             "original_price":"250",
             "pictures":[
-                "https://www.platypusshoes.com.au/media/catalog/product/cache/db6130527737a35b7652b68f1cc1d88c/w/l/wl574fw2.gry_wl574fw2_gry_01_699609.jpg",
-                "https://www.platypusshoes.com.au/media/catalog/product/cache/db6130527737a35b7652b68f1cc1d88c/w/l/wl574fw2.gry_wl574fw2_gry_08_699609.jpg",
-                "https://www.platypusshoes.com.au/media/catalog/product/cache/db6130527737a35b7652b68f1cc1d88c/w/l/wl574fw2.gry_wl574fw2_gry_02_699609.jpg",
-                "https://www.platypusshoes.com.au/media/catalog/product/cache/db6130527737a35b7652b68f1cc1d88c/w/l/wl574fw2.gry_wl574fw2_gry_06_699609.jpg"
+                "https://www.converse.com.au/media/catalog/product/cache/506b4e978a2aaf2437105399caeb33bd/u/n/unisex_converse_chuck_taylor_all_star_classic_colour_high_top_black_19160_0.jpg",
+                "https://www.converse.com.au/media/catalog/product/cache/122ed3c57cbb9e5a97d45d900d4f4066/u/n/unisex_converse_chuck_taylor_all_star_classic_colour_high_top_black_19160_7.jpg",
+                "https://www.converse.com.au/media/catalog/product/cache/122ed3c57cbb9e5a97d45d900d4f4066/u/n/unisex_converse_chuck_taylor_all_star_classic_colour_high_top_black_19160_2.jpg",
+                "https://www.converse.com.au/media/catalog/product/cache/506b4e978a2aaf2437105399caeb33bd/u/n/unisex_converse_chuck_taylor_all_star_classic_colour_high_top_black_19160_5.jpg"
                 
             ]
         },
@@ -32,10 +32,10 @@ export const DataProvider = (props) =>{
             "discount":"0%",
             "original_price":"$130",
             "pictures":[
-                "https://www.platypusshoes.com.au/media/catalog/product/cache/db6130527737a35b7652b68f1cc1d88c/5/6/560845.blk_560845_blk_01_174424.jpeg",
-                "https://www.platypusshoes.com.au/media/catalog/product/cache/db6130527737a35b7652b68f1cc1d88c/5/6/560845.blk_560845_blk_05_174424.jpeg",
-                "https://www.platypusshoes.com.au/media/catalog/product/cache/db6130527737a35b7652b68f1cc1d88c/5/6/560845.blk_560845_blk_03_174424.jpeg",
-                "https://www.platypusshoes.com.au/media/catalog/product/cache/db6130527737a35b7652b68f1cc1d88c/5/6/560845.blk_560845_blk_07_174424.jpeg"
+                "https://www.platypusshoes.com.au/media/catalog/product/5/7/571880_neut_01.jpg?auto=webp&quality=85&format=pjpg&width=100%25&fit=cover",
+                "https://www.platypusshoes.com.au/media/catalog/product/5/7/571880_neut_02.jpg?auto=webp&quality=85&format=pjpg&width=100%25&fit=cover",
+                "https://www.platypusshoes.com.au/media/catalog/product/5/7/571880_neut_03.jpg?auto=webp&quality=85&format=pjpg&width=100%25&fit=cover",
+                "https://www.platypusshoes.com.au/media/catalog/product/5/7/571880_neut_05.jpg?auto=webp&quality=85&format=pjpg&width=100%25&fit=cover"
             ]
         },
         {
@@ -48,10 +48,10 @@ export const DataProvider = (props) =>{
             "discount":"0%",
             "original_price":"$140.00",
             "pictures":[
-                "https://www.platypusshoes.com.au/media/catalog/product/cache/db6130527737a35b7652b68f1cc1d88c/3/8/38188501_wht_01.jpeg",
-                "https://www.platypusshoes.com.au/media/catalog/product/cache/db6130527737a35b7652b68f1cc1d88c/3/8/38188501_wht_08.jpeg",
-                "https://www.platypusshoes.com.au/media/catalog/product/cache/db6130527737a35b7652b68f1cc1d88c/3/8/38188501_wht_04.jpeg",
-                "https://www.platypusshoes.com.au/media/catalog/product/cache/db6130527737a35b7652b68f1cc1d88c/3/8/38188501_wht_05.jpeg"               
+                "https://www.platypusshoes.com.au/media/catalog/product/2/2/22209001_blk_01.jpg?auto=webp&quality=85&format=pjpg&width=100%25&fit=cover",
+                "https://www.platypusshoes.com.au/media/catalog/product/2/2/22209001_blk_02.jpg?auto=webp&quality=85&format=pjpg&width=100%25&fit=cover",
+                "https://www.platypusshoes.com.au/media/catalog/product/2/2/22209001_blk_03.jpg?auto=webp&quality=85&format=pjpg&width=100%25&fit=cover",
+                "https://www.platypusshoes.com.au/media/catalog/product/2/2/22209001_blk_07.jpg?auto=webp&quality=85&format=pjpg&width=100%25&fit=cover"               
             ]
         },
         {
@@ -64,10 +64,10 @@ export const DataProvider = (props) =>{
             "discount":"0%",
             "original_price":"$160.00",
             "pictures":[
-                "https://www.platypusshoes.com.au/media/catalog/product/cache/db6130527737a35b7652b68f1cc1d88c/c/u/cu9452_006_blk_01.jpeg",
-                "https://www.platypusshoes.com.au/media/catalog/product/cache/db6130527737a35b7652b68f1cc1d88c/c/u/cu9452_006_blk_02.jpeg",
-                "https://www.platypusshoes.com.au/media/catalog/product/cache/db6130527737a35b7652b68f1cc1d88c/c/u/cu9452_006_blk_08.jpeg",
-                "https://www.platypusshoes.com.au/media/catalog/product/cache/db6130527737a35b7652b68f1cc1d88c/c/u/cu9452_006_blk_05.jpeg"
+                "https://www.platypusshoes.com.au/media/catalog/product/2/0/202a024102_wht_01.jpeg?auto=webp&quality=85&format=pjpg&width=100%25&fit=cover",
+                "https://www.platypusshoes.com.au/media/catalog/product/2/0/202a024102_wht_02.jpeg?auto=webp&quality=85&format=pjpg&width=100%25&fit=cover",
+                "https://www.platypusshoes.com.au/media/catalog/product/2/0/202a024102_wht_03.jpeg?auto=webp&quality=85&format=pjpg&width=100%25&fit=cover",
+                "https://www.platypusshoes.com.au/media/catalog/product/2/0/202a024102_wht_05.jpeg?auto=webp&quality=85&format=pjpg&width=100%25&fit=cover"
             ]
         },
         {
@@ -80,10 +80,10 @@ export const DataProvider = (props) =>{
             "discount":"50%",
             "original_price":"$140",
             "pictures":[
-                "https://www.platypusshoes.com.au/media/catalog/product/cache/db6130527737a35b7652b68f1cc1d88c/v/n/vna54f54xh_blu_01_1.jpeg",
-                "https://www.platypusshoes.com.au/media/catalog/product/cache/db6130527737a35b7652b68f1cc1d88c/v/n/vna54f54xh_blu_02_1.jpeg",
-                "https://www.platypusshoes.com.au/media/catalog/product/cache/db6130527737a35b7652b68f1cc1d88c/v/n/vna54f54xh_blu_03.jpeg",
-                "https://www.platypusshoes.com.au/media/catalog/product/cache/db6130527737a35b7652b68f1cc1d88c/v/n/vna54f54xh_blu_05_1.jpeg"
+                "https://www.platypusshoes.com.au/media/catalog/product/f/m/fm0fm03997_ybr_wht_02.jpeg?auto=webp&quality=85&format=pjpg&width=100%25&fit=cover",
+                "https://www.platypusshoes.com.au/media/catalog/product/f/m/fm0fm03997_ybr_wht_01.jpeg?auto=webp&quality=85&format=pjpg&width=100%25&fit=cover",
+                "https://www.platypusshoes.com.au/media/catalog/product/f/m/fm0fm03997_ybr_wht_03.jpeg?auto=webp&quality=85&format=pjpg&width=100%25&fit=coverr",
+                "https://www.platypusshoes.com.au/media/catalog/product/f/m/fm0fm03997_ybr_wht_04.jpeg?auto=webp&quality=85&format=pjpg&width=100%25&fit=cover"
             ]
         },
         {
@@ -96,10 +96,10 @@ export const DataProvider = (props) =>{
             "discount":"0%",
             "original_price":"$169",
             "pictures":[
-                "https://www.platypusshoes.com.au/media/catalog/product/cache/db6130527737a35b7652b68f1cc1d88c/f/m/fm02157100.wht_fm02157100_wht_01_225392.jpeg",
-                "https://www.platypusshoes.com.au/media/catalog/product/cache/db6130527737a35b7652b68f1cc1d88c/f/m/fm02157100.wht_fm02157100_wht_02_225392.jpeg",
-                "https://www.platypusshoes.com.au/media/catalog/product/cache/db6130527737a35b7652b68f1cc1d88c/f/m/fm02157100.wht_fm02157100_wht_03_225392.jpeg",
-                "https://www.platypusshoes.com.au/media/catalog/product/cache/db6130527737a35b7652b68f1cc1d88c/f/m/fm02157100.wht_fm02157100_wht_05_225392.jpeg" 
+                "https://www.platypusshoes.com.au/media/catalog/product/g/x/gx8765_neut_02.jpeg?auto=webp&quality=85&format=pjpg&width=100%25&fit=cover",
+                "https://www.platypusshoes.com.au/media/catalog/product/g/x/gx8765_neut_03.jpeg?auto=webp&quality=85&format=pjpg&width=100%25&fit=cover",
+                "https://www.platypusshoes.com.au/media/catalog/product/g/x/gx8765_neut_04.jpeg?auto=webp&quality=85&format=pjpg&width=100%25&fit=cover",
+                "https://www.platypusshoes.com.au/media/catalog/product/g/x/gx8765_neut_07.jpeg?auto=webp&quality=85&format=pjpg&width=100%25&fit=cover" 
             ]
         }
     ])
